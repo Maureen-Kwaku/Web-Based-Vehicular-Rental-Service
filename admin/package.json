@@ -1,0 +1,61 @@
+{
+  "name": "admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.3.11",
+    "@headlessui/react": "^0.3.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "add": "^2.0.6",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.17.0",
+    "firebase": "^8.3.3",
+    "graphql": "^15.5.0",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.20",
+    "postcss": "^8.2.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^1.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-spinners-kit": "^1.9.1",
+    "recharts": "^2.0.8",
+    "tailwindcss": "^2.0.3",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "tailwindConfig": "npx tailwindcss build src/index.css -o src/tailwind.css",
+    "start": "npm run tailwindConfig && react-scripts start",
+    "build": "npm run tailwindConfig && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && firebase deploy --token 1//03-8f_1KjETC6CgYIARAAGAMSNwF-L9IrgL8tu-KnGU-4GHM37hDrIJ3YxGuf2R6RNTV24zaMEc4ZPrKFJ56mZ03L0zQAon9jOVk"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
